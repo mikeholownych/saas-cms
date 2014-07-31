@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: cms_development
+  username: cms
+  password: password1
+  host: localhost
+
+test:
+  <<: *default
+  database: cms_test
+  username: cms
+  password: password1
+  host: localhost
+
+production:
+  <<: *default
+  database: cms_production
+  username: cms
+  password: <%= ENV['CMS_DATABASE_PASSWORD'] %>
