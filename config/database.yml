@@ -3,6 +3,8 @@ development:
   encoding: unicode
   database: timetracker_recording_development
   pool: 5
+  username: saas-cms
+  passowrd: password1
   host: localhost
 
 test:
@@ -10,10 +12,14 @@ test:
   encoding: unicode
   database: timetracker_recording_test
   pool: 5
+  username: saas-cms
+  passowrd: password1
   host: localhost
 
 production:
   adapter: postgresql
   encoding: unicode
   database: timetracker_production
+  username: saas-cms
+  passowrd: password1
   pool: 5
